@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comming Soon UI</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <main class="container">
+        <!-- Left Side-->
+        <section class="info-section">
+            <div class="info-content">
+                <span class="badge">Contact
+                    <h1>Let's Work Together</h1>
+                    <p>
+                        Need help debugging those vibe code? I'd love to help. Send a message and I'll respond
+                        as soon as possible
+                    </p>
+                    <div class="contact-card">
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class = "fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <span class="card-label">Email</span>
+                                <a href="mailto:replytoachintya@outlook.com">replytoachintya@outlook.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class = "fa-solid fa-phone"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <span class="card-label">Phone</span>
+                                <a href="tel:+919711083403">+91 97110 83403</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <i class = "fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <span class="card-label">Current Location</span>
+                                <span>Nagpur, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="socials">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </span>
+            </div>
+        </section>
+        <!-- Right Side-->
+        <section class="form-section">
+            <form class="contact-form" id="contact-form">
+                <h2>Send a message</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Achintya" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Goyal" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="replytoachintya@outlook.com" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option value="" selected disabled>Select a topic</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="project">Project Partnership</option>
+                        <option value="other">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message..." required rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="submit">
+                    <span>Send Message <i class="fa-solid fa-paper-plane"></i></span>
+                </button>
+            </form>
+
+            <!--Success-->
+            <div class="success-state hidden" id="success">
+                <div class="success-icon">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+
+                <h2>Message sent!</h2>
+                <p>Thank you for reaching out. I will get back to you soon.</p>
+                <button class="reset-btn" id="reset-btn">Send Another Message</button>
+            </div>
+        </section>
+        
+    </main>
 </body>
 </html>
